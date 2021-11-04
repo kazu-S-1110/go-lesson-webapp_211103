@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"go-lesson-webapp_211103/app/models"
 )
 
@@ -12,7 +13,7 @@ func main() {
 
 	// log.Println("test")
 
-	// fmt.Println(models.Db)
+	fmt.Println(models.Db)
 
 	// u := &models.User{}
 	// u.Name = "sage"
@@ -31,6 +32,6 @@ func main() {
 	// u, _ = models.GetUser(1)
 	// fmt.Println(u)
 
-	u, _ := models.GetUser(2)
-	u.DeleteUser()
+	// u, _ := models.GetUser(2)
+	// u.DeleteUser()
 }
