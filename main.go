@@ -32,7 +32,7 @@ func main() {
 	// u, _ = models.GetUser(1)o
 	// fmt.Println(u)
 
-	// u, _ := models.GetUser(2)
+	u, _ := models.GetUser(1)
 	// u.DeleteUser()
 	// user, _ := models.GetUser(1)
 	// fmt.Println(user)
@@ -41,9 +41,15 @@ func main() {
 	// t, _ := models.GetTodo(1)
 	// fmt.Println(t)
 
-	todos, _ := models.GetTodos()
-	fmt.Println(todos)
+	// todos, _ := models.GetTodos()
+	// fmt.Println(todos)
+	// for _, v := range todos {
+	// 	fmt.Println(v)
+	// }
+
+	todos, _ := u.GetTodosByUser()
 	for _, v := range todos {
 		fmt.Println(v)
 	}
+
 }
