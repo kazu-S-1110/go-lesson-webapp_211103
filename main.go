@@ -32,14 +32,14 @@ func main() {
 	// u, _ = models.GetUser(1)o
 	// fmt.Println(u)
 
-	u, _ := models.GetUser(1)
+	// u, _ := models.GetUser(1)
 	// u.DeleteUser()
 	// user, _ := models.GetUser(1)
 	// fmt.Println(user)
 	// user.CreateTodo("first todo")
 
-	// t, _ := models.GetTodo(1)
-	// fmt.Println(t)
+	t, _ := models.GetTodo(1)
+	fmt.Println(t)
 
 	// todos, _ := models.GetTodos()
 	// fmt.Println(todos)
@@ -47,9 +47,11 @@ func main() {
 	// 	fmt.Println(v)
 	// }
 
-	todos, _ := u.GetTodosByUser()
-	for _, v := range todos {
-		fmt.Println(v)
-	}
+	// todos, _ := u.GetTodosByUser()
+	// for _, v := range todos {
+	// 	fmt.Println(v)
+	// }
+	t.Content = "first todo updated!"
+	t.UpdateTodo()
 
 }
