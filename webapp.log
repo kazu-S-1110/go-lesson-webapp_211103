@@ -7,3 +7,69 @@
 2021/11/06 22:18:43 todos.go:70: no such column: id
 2021/11/06 22:18:58 todos.go:70: no such column: id
 2021/11/06 22:19:10 todos.go:70: near "where": syntax error
+2021/11/08 13:09:27 server.go:3119: http: panic serving [::1]:53041: template: layout.html:13: function "templates" not defined
+goroutine 19 [running]:
+net/http.(*conn).serve.func1(0xc000135360)
+	/Users/k-shiraishi/sdk/go1.16.9/src/net/http/server.go:1804 +0x153
+panic(0x1358c40, 0xc00009c0d0)
+	/Users/k-shiraishi/sdk/go1.16.9/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/Users/k-shiraishi/sdk/go1.16.9/src/html/template/template.go:374
+go-lesson-webapp_211103/app/controllers.generateHTML(0x142d570, 0xc0000c2000, 0x1349b20, 0x1421e10, 0xc000137ab8, 0x2, 0x2)
+	/Users/k-shiraishi/go/src/go-lesson-webapp_211103/app/controllers/server.go:22 +0x2ce
+go-lesson-webapp_211103/app/controllers.top(0x142d570, 0xc0000c2000, 0xc0000ae000)
+	/Users/k-shiraishi/go/src/go-lesson-webapp_211103/app/controllers/route_main.go:8 +0xa5
+net/http.HandlerFunc.ServeHTTP(0x13d60a0, 0x142d570, 0xc0000c2000, 0xc0000ae000)
+	/Users/k-shiraishi/sdk/go1.16.9/src/net/http/server.go:2049 +0x44
+net/http.(*ServeMux).ServeHTTP(0x1617240, 0x142d570, 0xc0000c2000, 0xc0000ae000)
+	/Users/k-shiraishi/sdk/go1.16.9/src/net/http/server.go:2428 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00018a000, 0x142d570, 0xc0000c2000, 0xc0000ae000)
+	/Users/k-shiraishi/sdk/go1.16.9/src/net/http/server.go:2867 +0xa3
+net/http.(*conn).serve(0xc000135360, 0x142dc20, 0xc00009a000)
+	/Users/k-shiraishi/sdk/go1.16.9/src/net/http/server.go:1932 +0x8cd
+created by net/http.(*Server).Serve
+	/Users/k-shiraishi/sdk/go1.16.9/src/net/http/server.go:2993 +0x39b
+2021/11/08 13:09:27 server.go:3119: http: panic serving [::1]:53042: template: layout.html:13: function "templates" not defined
+goroutine 36 [running]:
+net/http.(*conn).serve.func1(0xc0000e4000)
+	/Users/k-shiraishi/sdk/go1.16.9/src/net/http/server.go:1804 +0x153
+panic(0x1358c40, 0xc00009c1a0)
+	/Users/k-shiraishi/sdk/go1.16.9/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/Users/k-shiraishi/sdk/go1.16.9/src/html/template/template.go:374
+go-lesson-webapp_211103/app/controllers.generateHTML(0x142d570, 0xc0000c20e0, 0x1349b20, 0x1421e10, 0xc000092ab8, 0x2, 0x2)
+	/Users/k-shiraishi/go/src/go-lesson-webapp_211103/app/controllers/server.go:22 +0x2ce
+go-lesson-webapp_211103/app/controllers.top(0x142d570, 0xc0000c20e0, 0xc0000ae100)
+	/Users/k-shiraishi/go/src/go-lesson-webapp_211103/app/controllers/route_main.go:8 +0xa5
+net/http.HandlerFunc.ServeHTTP(0x13d60a0, 0x142d570, 0xc0000c20e0, 0xc0000ae100)
+	/Users/k-shiraishi/sdk/go1.16.9/src/net/http/server.go:2049 +0x44
+net/http.(*ServeMux).ServeHTTP(0x1617240, 0x142d570, 0xc0000c20e0, 0xc0000ae100)
+	/Users/k-shiraishi/sdk/go1.16.9/src/net/http/server.go:2428 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00018a000, 0x142d570, 0xc0000c20e0, 0xc0000ae100)
+	/Users/k-shiraishi/sdk/go1.16.9/src/net/http/server.go:2867 +0xa3
+net/http.(*conn).serve(0xc0000e4000, 0x142dc20, 0xc00009a1c0)
+	/Users/k-shiraishi/sdk/go1.16.9/src/net/http/server.go:1932 +0x8cd
+created by net/http.(*Server).Serve
+	/Users/k-shiraishi/sdk/go1.16.9/src/net/http/server.go:2993 +0x39b
+2021/11/08 13:09:27 server.go:3119: http: panic serving [::1]:53043: template: layout.html:13: function "templates" not defined
+goroutine 39 [running]:
+net/http.(*conn).serve.func1(0xc0000e40a0)
+	/Users/k-shiraishi/sdk/go1.16.9/src/net/http/server.go:1804 +0x153
+panic(0x1358c40, 0xc00011ae50)
+	/Users/k-shiraishi/sdk/go1.16.9/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/Users/k-shiraishi/sdk/go1.16.9/src/html/template/template.go:374
+go-lesson-webapp_211103/app/controllers.generateHTML(0x142d570, 0xc0000c21c0, 0x1349b20, 0x1421e10, 0xc000092ab8, 0x2, 0x2)
+	/Users/k-shiraishi/go/src/go-lesson-webapp_211103/app/controllers/server.go:22 +0x2ce
+go-lesson-webapp_211103/app/controllers.top(0x142d570, 0xc0000c21c0, 0xc0000ae200)
+	/Users/k-shiraishi/go/src/go-lesson-webapp_211103/app/controllers/route_main.go:8 +0xa5
+net/http.HandlerFunc.ServeHTTP(0x13d60a0, 0x142d570, 0xc0000c21c0, 0xc0000ae200)
+	/Users/k-shiraishi/sdk/go1.16.9/src/net/http/server.go:2049 +0x44
+net/http.(*ServeMux).ServeHTTP(0x1617240, 0x142d570, 0xc0000c21c0, 0xc0000ae200)
+	/Users/k-shiraishi/sdk/go1.16.9/src/net/http/server.go:2428 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00018a000, 0x142d570, 0xc0000c21c0, 0xc0000ae200)
+	/Users/k-shiraishi/sdk/go1.16.9/src/net/http/server.go:2867 +0xa3
+net/http.(*conn).serve(0xc0000e40a0, 0x142dc20, 0xc00009a340)
+	/Users/k-shiraishi/sdk/go1.16.9/src/net/http/server.go:1932 +0x8cd
+created by net/http.(*Server).Serve
+	/Users/k-shiraishi/sdk/go1.16.9/src/net/http/server.go:2993 +0x39b
