@@ -73,3 +73,69 @@ net/http.(*conn).serve(0xc0000e40a0, 0x142dc20, 0xc00009a340)
 	/Users/k-shiraishi/sdk/go1.16.9/src/net/http/server.go:1932 +0x8cd
 created by net/http.(*Server).Serve
 	/Users/k-shiraishi/sdk/go1.16.9/src/net/http/server.go:2993 +0x39b
+2021/11/08 18:54:19 server.go:3119: http: panic serving [::1]:54256: open app/views/templates/navbar.html: no such file or directory
+goroutine 19 [running]:
+net/http.(*conn).serve.func1(0xc000133400)
+	/Users/k-shiraishi/sdk/go1.16.9/src/net/http/server.go:1804 +0x153
+panic(0x1368c00, 0xc00011d830)
+	/Users/k-shiraishi/sdk/go1.16.9/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/Users/k-shiraishi/sdk/go1.16.9/src/html/template/template.go:374
+go-lesson-webapp_211103/app/controllers.generateHTML(0x142d6f0, 0xc00018a0e0, 0x0, 0x0, 0xc00013baa8, 0x3, 0x3)
+	/Users/k-shiraishi/go/src/go-lesson-webapp_211103/app/controllers/server.go:24 +0x2ce
+go-lesson-webapp_211103/app/controllers.signup(0x142d6f0, 0xc00018a0e0, 0xc000182100)
+	/Users/k-shiraishi/go/src/go-lesson-webapp_211103/app/controllers/route_auth.go:6 +0xae
+net/http.HandlerFunc.ServeHTTP(0x13d61d0, 0x142d6f0, 0xc00018a0e0, 0xc000182100)
+	/Users/k-shiraishi/sdk/go1.16.9/src/net/http/server.go:2049 +0x44
+net/http.(*ServeMux).ServeHTTP(0x1617240, 0x142d6f0, 0xc00018a0e0, 0xc000182100)
+	/Users/k-shiraishi/sdk/go1.16.9/src/net/http/server.go:2428 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00018a000, 0x142d6f0, 0xc00018a0e0, 0xc000182100)
+	/Users/k-shiraishi/sdk/go1.16.9/src/net/http/server.go:2867 +0xa3
+net/http.(*conn).serve(0xc000133400, 0x142dda0, 0xc000158300)
+	/Users/k-shiraishi/sdk/go1.16.9/src/net/http/server.go:1932 +0x8cd
+created by net/http.(*Server).Serve
+	/Users/k-shiraishi/sdk/go1.16.9/src/net/http/server.go:2993 +0x39b
+2021/11/08 18:54:19 server.go:3119: http: panic serving [::1]:54257: open app/views/templates/navbar.html: no such file or directory
+goroutine 34 [running]:
+net/http.(*conn).serve.func1(0xc00021e000)
+	/Users/k-shiraishi/sdk/go1.16.9/src/net/http/server.go:1804 +0x153
+panic(0x1368c00, 0xc000200600)
+	/Users/k-shiraishi/sdk/go1.16.9/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/Users/k-shiraishi/sdk/go1.16.9/src/html/template/template.go:374
+go-lesson-webapp_211103/app/controllers.generateHTML(0x142d6f0, 0xc000246000, 0x0, 0x0, 0xc00022caa8, 0x3, 0x3)
+	/Users/k-shiraishi/go/src/go-lesson-webapp_211103/app/controllers/server.go:24 +0x2ce
+go-lesson-webapp_211103/app/controllers.signup(0x142d6f0, 0xc000246000, 0xc000234000)
+	/Users/k-shiraishi/go/src/go-lesson-webapp_211103/app/controllers/route_auth.go:6 +0xae
+net/http.HandlerFunc.ServeHTTP(0x13d61d0, 0x142d6f0, 0xc000246000, 0xc000234000)
+	/Users/k-shiraishi/sdk/go1.16.9/src/net/http/server.go:2049 +0x44
+net/http.(*ServeMux).ServeHTTP(0x1617240, 0x142d6f0, 0xc000246000, 0xc000234000)
+	/Users/k-shiraishi/sdk/go1.16.9/src/net/http/server.go:2428 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00018a000, 0x142d6f0, 0xc000246000, 0xc000234000)
+	/Users/k-shiraishi/sdk/go1.16.9/src/net/http/server.go:2867 +0xa3
+net/http.(*conn).serve(0xc00021e000, 0x142dda0, 0xc000206080)
+	/Users/k-shiraishi/sdk/go1.16.9/src/net/http/server.go:1932 +0x8cd
+created by net/http.(*Server).Serve
+	/Users/k-shiraishi/sdk/go1.16.9/src/net/http/server.go:2993 +0x39b
+2021/11/08 18:54:19 server.go:3119: http: panic serving [::1]:54258: open app/views/templates/navbar.html: no such file or directory
+goroutine 5 [running]:
+net/http.(*conn).serve.func1(0xc00007e000)
+	/Users/k-shiraishi/sdk/go1.16.9/src/net/http/server.go:1804 +0x153
+panic(0x1368c00, 0xc00007c480)
+	/Users/k-shiraishi/sdk/go1.16.9/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/Users/k-shiraishi/sdk/go1.16.9/src/html/template/template.go:374
+go-lesson-webapp_211103/app/controllers.generateHTML(0x142d6f0, 0xc00028a000, 0x0, 0x0, 0xc000061aa8, 0x3, 0x3)
+	/Users/k-shiraishi/go/src/go-lesson-webapp_211103/app/controllers/server.go:24 +0x2ce
+go-lesson-webapp_211103/app/controllers.signup(0x142d6f0, 0xc00028a000, 0xc000282000)
+	/Users/k-shiraishi/go/src/go-lesson-webapp_211103/app/controllers/route_auth.go:6 +0xae
+net/http.HandlerFunc.ServeHTTP(0x13d61d0, 0x142d6f0, 0xc00028a000, 0xc000282000)
+	/Users/k-shiraishi/sdk/go1.16.9/src/net/http/server.go:2049 +0x44
+net/http.(*ServeMux).ServeHTTP(0x1617240, 0x142d6f0, 0xc00028a000, 0xc000282000)
+	/Users/k-shiraishi/sdk/go1.16.9/src/net/http/server.go:2428 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00018a000, 0x142d6f0, 0xc00028a000, 0xc000282000)
+	/Users/k-shiraishi/sdk/go1.16.9/src/net/http/server.go:2867 +0xa3
+net/http.(*conn).serve(0xc00007e000, 0x142dda0, 0xc000076040)
+	/Users/k-shiraishi/sdk/go1.16.9/src/net/http/server.go:1932 +0x8cd
+created by net/http.(*Server).Serve
+	/Users/k-shiraishi/sdk/go1.16.9/src/net/http/server.go:2993 +0x39b
