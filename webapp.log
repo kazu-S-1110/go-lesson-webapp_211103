@@ -139,3 +139,7 @@ net/http.(*conn).serve(0xc00007e000, 0x142dda0, 0xc000076040)
 	/Users/k-shiraishi/sdk/go1.16.9/src/net/http/server.go:1932 +0x8cd
 created by net/http.(*Server).Serve
 	/Users/k-shiraishi/sdk/go1.16.9/src/net/http/server.go:2993 +0x39b
+2021/11/09 12:24:45 user.go:105: sql: converting argument $4 type: unsupported type func() time.Time, a func
+2021/11/09 12:24:45 main.go:19: no such table: sessions
+2021/11/09 12:25:55 user.go:105: no such table: sessions
+2021/11/09 12:25:55 main.go:19: sql: no rows in result set
