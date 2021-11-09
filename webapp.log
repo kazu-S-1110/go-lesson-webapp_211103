@@ -143,3 +143,5 @@ created by net/http.(*Server).Serve
 2021/11/09 12:24:45 main.go:19: no such table: sessions
 2021/11/09 12:25:55 user.go:105: no such table: sessions
 2021/11/09 12:25:55 main.go:19: sql: no rows in result set
+2021/11/09 12:47:34 route_auth.go:38: sql: no rows in result set
+2021/11/09 12:47:34 server.go:3119: http: superfluous response.WriteHeader call from go-lesson-webapp_211103/app/controllers.authenticate (route_auth.go:55)
