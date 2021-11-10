@@ -11,7 +11,7 @@ func signup(w http.ResponseWriter, r *http.Request) {
 	if r.Method == "GET" {
 		_, err := session(w, r)
 		if err != nil {
-			generateHTML(w, "failed", "layout", "public_navbar", "signup")
+			generateHTML(w, nil, "layout", "public_navbar", "signup")
 		} else {
 			http.Redirect(w, r, "/todos", http.StatusFound)
 		}
@@ -35,7 +35,7 @@ func signup(w http.ResponseWriter, r *http.Request) {
 func login(w http.ResponseWriter, r *http.Request) {
 	_, err := session(w, r)
 	if err != nil {
-		generateHTML(w, "you have signed up ? we don't found", "layout", "public_navbar", "login")
+		generateHTML(w, nil, "layout", "public_navbar", "login")
 	} else {
 		http.Redirect(w, r, "/todos", http.StatusFound)
 	}
