@@ -325,3 +325,9 @@ net/http.(*conn).serve(0xc0002380a0, 0x45add80, 0xc0000762c0)
 	/Users/k-shiraishi/sdk/go1.16.9/src/net/http/server.go:1932 +0x8cd
 created by net/http.(*Server).Serve
 	/Users/k-shiraishi/sdk/go1.16.9/src/net/http/server.go:2993 +0x39b
+2021/11/10 12:57:21 route_auth.go:48: sql: no rows in result set
+2021/11/10 12:57:21 server.go:3119: http: superfluous response.WriteHeader call from go-lesson-webapp_211103/app/controllers.authenticate (route_auth.go:65)
+2021/11/10 12:58:24 route_auth.go:48: sql: no rows in result set
+2021/11/10 12:58:24 server.go:3119: http: superfluous response.WriteHeader call from go-lesson-webapp_211103/app/controllers.authenticate (route_auth.go:65)
+2021/11/10 12:59:58 route_auth.go:48: sql: no rows in result set
+2021/11/10 12:59:58 server.go:3119: http: superfluous response.WriteHeader call from go-lesson-webapp_211103/app/controllers.authenticate (route_auth.go:65)
