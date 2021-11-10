@@ -24,6 +24,8 @@ func index(w http.ResponseWriter, r *http.Request) {
 		if err != nil {
 			log.Println(err)
 		}
-		generateHTML(w, nil, "layout", "private_navbar", "index")
+		todos, _ := user.GetTodosByUser()
+		user.Todos = todos
+		generateHTML(w, user, "layout", "private_navbar", "index")
 	}
 }
