@@ -1,6 +1,7 @@
 package controllers
 
 import (
+	"go-lesson-webapp_211103/app/models"
 	"log"
 	"net/http"
 )
@@ -57,5 +58,22 @@ func todoSave(w http.ResponseWriter, r *http.Request) {
 			log.Println(err)
 		}
 		http.Redirect(w, r, "/todos", http.StatusFound)
+	}
+}
+
+func todoEdit(w http.ResponseWriter, r *http.Request, id int) {
+	sess, err := session(w, r)
+	if err != nil {
+		http.Redirect(w, r, "/login", http.StatusFound)
+	} else {
+		_, err := sess.GetUserBySession()
+		if err != nil {
+			log.Println(err)
+		}
+		t, err := models.GetTodo(id)
+		if err != nil {
+			log.Println(err)
+		}
+		generateHTML(w, t, "layout", "private_navbar", "todo_edit")
 	}
 }
